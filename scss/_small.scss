@@ -1,0 +1,95 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:border-box;
+}
+
+/* Body Rules Here*/
+
+body {
+    font-family: $fontFamily;
+    font-weight: $regularWeight;
+    font-size: 16px;
+}
+
+/* Header Rules Here*/
+
+header {
+    display: grid;
+    padding: 1rem 2%;
+    grid-template-columns: 105px auto;
+}
+
+header img {
+    padding-right: 15px;
+}
+
+header h1 {
+margin: 1.5rem 0 0 0;
+font-weight: $heavyWeight;
+}
+
+header h2 {
+margin: 0;
+}
+
+/* Nav Rules Here*/
+nav {
+    background-color: darken($secondaryColor, 10%);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li.active {
+    background-color: #333;
+}
+
+nav a {
+    display: block;
+    padding: .8rem 0;
+    color: #eee;
+    text-align: right;
+    text-decoration: none;
+    margin-right: 2%;
+}
+
+nav a:hover {
+    background-color: lighten($secondaryColor, 80%);
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure {
+    flex-basis: 46%;
+    margin: 1rem 2%;
+}
+
+div.gallery figure img {
+    width: 100%;
+    height: auto;
+}
+
+div.gallery figure figcaption {
+    text-align: center;
+}
+
+
+main {
+    display: block;
+}
+
+footer {
+    background-color: $primaryColor;
+    text-align: center;
+    padding: 1rem 2%;
+}
